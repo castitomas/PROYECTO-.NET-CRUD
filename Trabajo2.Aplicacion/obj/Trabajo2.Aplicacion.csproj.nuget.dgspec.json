@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {}
+    "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {}
   },
   "projects": {
-    "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
+    "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
+        "projectUniqueName": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
         "projectName": "Trabajo2.Aplicacion",
-        "projectPath": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
+        "projectPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
         "packagesPath": "C:\\Users\\caast\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\obj\\",
+        "outputPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\caast\\AppData\\Roaming\\NuGet\\NuGet.Config"

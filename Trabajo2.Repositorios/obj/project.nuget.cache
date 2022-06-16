@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "20s6kAnSRrNk3A64SZKmrp9yU4Mo9iM5RmwlZmVqdWqbvKmFQmF2GD7EQ2e++C6dI6XS1DWJkxsniAzqgNHBeg==",
+  "dgSpecHash": "O5Z7bLa7smUp5HdeFTIQral5eyKqcKiLc77UtccjaYq1WxXw2bXCgk6sM/luACCUMf/8fraXAEE1Pn1u1cQ9KQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
+  "projectFilePath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\caast\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.5\\microsoft.data.sqlite.core.6.0.5.nupkg.sha512",
     "C:\\Users\\caast\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
