@@ -1,0 +1,64 @@
+@page "/listadoEstudiantes"
+@inject ListarEstudiantesUseCase ListarEstudiantesUseCase
+@inject IJSRuntime JsRuntime
+@inject EliminarEstudianteUseCase EliminarEstudianteUseCase
+@inject NavigationManager Navegador
+
+<table class = "table">
+    <thead>
+        <tr>
+            <th> ID </th>
+            <th> NOMBRE </th>
+            <th> APELLIDO </th>
+            <th> DNI </th>
+            <th> EMAIL </th>
+            <th> ACCIÓN </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var est in _lista)
+        {
+            <tr>
+                <td>@est._estudianteId</td>
+                <td>@est.Nombre</td>
+                <td>@est.Apellido</td>
+                <td>@est.DNI</td>
+                <td>@est.Email</td>
+                <td>
+                    <button class="btn btn-primary"
+                            @onclick="()=>ModificarEstudiante(est._estudianteId)">
+                        <i class= "oi oi-pencil"></i>
+                    </button>
+                    <button class="btn btn-danger"
+                            @onclick="()=>EliminarEstudiante(est._estudianteId)">
+                        <i class="oi oi-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code 
+{
+    List<Estudiante> _lista = new List<Estudiante>();
+    protected override void OnInitialized()
+    {
+        _lista = ListarEstudiantesUseCase.Ejecutar();
+    }
+    async Task EliminarEstudiante(int id)
+    {
+        bool confirmado = await JsRuntime.InvokeAsync<bool>("confirm", $"Desea eliminar el estudiante {id}?");
+        
+        if (confirmado)
+        {
+            EliminarEstudianteUseCase.Ejecutar(id);
+            _lista = ListarEstudiantesUseCase.Ejecutar();
+        }
+    }
+
+    void ModificarEstudiante(int id)
+    {
+        Navegador.NavigateTo($"estudiante/{id}");
+    }
+}

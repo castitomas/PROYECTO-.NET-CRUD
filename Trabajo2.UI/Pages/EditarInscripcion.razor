@@ -1,0 +1,83 @@
+@page "/inscripcion/{Id:int?}"
+@inject AgregarInscripcionUseCase AgregarInscripcionUseCase
+@inject ListarEstudiantesUseCase ListarEstudiantesUseCase
+@inject ListarCursosUseCase ListarCursosUseCase
+@inject ObtenerCursoUseCase ObtenerCursoUseCase
+@inject ObtenerEstudianteUseCase ObtenerEstudianteUseCase
+@inject ObtenerInscripcionUseCase ObtenerInscripcionUseCase
+@inject NavigationManager Navegador
+
+@if(_esNuevaInscripcion)
+{
+    <h3> Agregando una nueva Inscripcion </h3>
+}
+else
+{
+    <h3> Modificando la Inscripcion del estudiante con ID "@inscripcion._inscripcionId"</h3>
+}
+
+
+<EditForm Model=@_estudiante>
+    <InputSelect @bind-Value=@_estudiante._estudianteId>
+        @foreach(var est in DevolverListaEstudiante())
+        {
+            <option value=@est._estudianteId>@est.Nombre</option>
+        }
+    </InputSelect>
+</EditForm>
+<EditForm Model=@_curso>
+    <InputSelect @bind-Value=@_curso._cursoId>
+        @foreach(var cur in DevolverListaCurso())
+        {
+            <option value=@cur._cursoId>@cur.Titulo</option>
+        }
+    </InputSelect>
+</EditForm>
+<input placeholder="Fecha de Inscripcion" @bind="fechaDeInscripcion" class="form-control">
+<button class="btn btn-primary" @onclick="Agregar">Agregar</button>
+
+@code{
+    Estudiante _estudiante = new Estudiante();
+    Curso _curso = new Curso();
+    Inscripcion inscripcion = new Inscripcion();
+    DateTime fechaDeInscripcion = new DateTime();
+    [Parameter] public int? Id { get; set; }
+    bool _esNuevaInscripcion = true;
+    protected override void OnParametersSet()
+    {
+        if(Id != null)
+        {
+            var inscr_hallado = ObtenerInscripcionUseCase.Ejecutar(Id.Value);
+            if(inscr_hallado != null)
+            {
+                inscripcion = inscr_hallado;
+                _esNuevaInscripcion = false;
+            }
+        }
+    }
+    
+    void Agregar() {
+        var estudiante = ObtenerEstudianteUseCase.Ejecutar(_estudiante._estudianteId);
+        var curso = ObtenerCursoUseCase.Ejecutar(_curso._cursoId);
+        var fecha = fechaDeInscripcion;
+        var inscripcion = new Inscripcion() { EstudianteId = estudiante._estudianteId, CursoId = curso._cursoId, Estudiante = estudiante, Curso = curso, fechaInscripcion = fecha};
+        AgregarInscripcionUseCase.Ejecutar(inscripcion);
+        _estudiante = new Estudiante();
+        _curso = new Curso();
+        inscripcion = new Inscripcion();
+        fechaDeInscripcion = new DateTime();
+        Navegador.NavigateTo("listadoInscripciones");
+    }
+
+    List<Estudiante> DevolverListaEstudiante()
+    {
+        var listaEstudiantes = ListarEstudiantesUseCase.Ejecutar();
+        return listaEstudiantes;
+    }
+
+    List<Curso> DevolverListaCurso()
+    {
+        var listaCursos = ListarCursosUseCase.Ejecutar();
+        return listaCursos;
+    }
+}

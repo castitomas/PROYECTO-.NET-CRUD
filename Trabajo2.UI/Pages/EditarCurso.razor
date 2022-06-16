@@ -1,0 +1,57 @@
+@page "/curso/{Id:int?}"
+@inject ObtenerCursoUseCase ObtenerCursoUseCase
+@inject ModificarCursoUseCase ModificarCursoUseCase
+@inject NavigationManager Navegador;
+@inject AgregarCursoUseCase AgregarCursoUseCase
+
+@if (_esNuevoCurso)
+{
+    <h3> Agregando un nuevo Curso </h3>
+}
+else
+{
+    <h3> Modificando al Curso "@_curso.Titulo" </h3>
+}
+
+
+<input placeholder="Titulo" @bind="_curso.Titulo" class="form-control">
+<input placeholder="Descripcion" @bind="_curso.Descripcion" class="form-control">
+<input placeholder="Fecha de Inicio" @bind="_curso.FechaDeInicio" class="form-control">
+<input placeholder="Fecha de Finalizacion" @bind="_curso.FechaDeFinalizacion" class="form-control">
+<button class="btn btn-primary" @onclick="Agregar">Agregar</button>
+
+
+
+@code
+{
+    Curso _curso = new Curso();
+
+    [Parameter] public int? Id { get; set; }
+    bool _esNuevoCurso = true;
+    protected override void OnParametersSet()
+    {
+        if (Id != null)
+        {
+            var cur_hallado = ObtenerCursoUseCase.Ejecutar(Id.Value);
+            if(cur_hallado != null)
+            {
+                _curso = cur_hallado;
+                _esNuevoCurso = false;
+            }
+        }
+    }
+
+    void Agregar()
+    {
+        if(_esNuevoCurso)
+        {
+            AgregarCursoUseCase.Ejecutar(_curso);
+        }
+        else
+        {
+            ModificarCursoUseCase.Ejecutar(_curso);
+        }
+        _curso = new Curso();
+        Navegador.NavigateTo("listadoCursos");
+    }
+}

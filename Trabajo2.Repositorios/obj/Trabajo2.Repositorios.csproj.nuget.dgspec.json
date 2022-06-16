@@ -1,0 +1,126 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
+        "projectName": "Trabajo2.Aplicacion",
+        "projectPath": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\caast\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caast\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
+        "projectName": "Trabajo2.Repositorios",
+        "projectPath": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
+        "packagesPath": "C:\\Users\\caast\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\caast\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
