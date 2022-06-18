@@ -68,4 +68,33 @@ public class RepositorioCurso: IRepositorioCurso
         }
         return listaCursos;
     }
+
+    public List<Estudiante> GetEstudiantesDeCurso(int id)
+    {
+        using (var db = new Trabajo2Context())
+        {
+            var listaEstudiantes = new List<Estudiante>();
+            var Estudiante = new Estudiante();
+            var query = db.Cursos.Join(db.Inscripciones,
+                            a => a._cursoId,
+                            e=> e.CursoId,
+                            (a, e) => new
+                            {
+                                Id = a._cursoId,
+                                Estudiante = e.EstudianteId,
+                            });
+            foreach(var obj in query)
+            {
+                if (id == obj.Id)
+                {
+                    var estudianteALista = db.Estudiantes.Where(o => o._estudianteId == obj.Estudiante).SingleOrDefault();
+                    if (estudianteALista != null)
+                    {
+                        listaEstudiantes.Add(estudianteALista);
+                    }
+                }
+            }
+            return listaEstudiantes;
+        }
+    }
 }

@@ -10,3 +10,15 @@ C:\Users\caast\proyectosDotnet\Trabajo2\Trabajo2\Trabajo2.Aplicacion\obj\Debug\n
 C:\Users\caast\proyectosDotnet\Trabajo2\Trabajo2\Trabajo2.Aplicacion\obj\Debug\net6.0\refint\Trabajo2.Aplicacion.dll
 C:\Users\caast\proyectosDotnet\Trabajo2\Trabajo2\Trabajo2.Aplicacion\obj\Debug\net6.0\Trabajo2.Aplicacion.pdb
 C:\Users\caast\proyectosDotnet\Trabajo2\Trabajo2\Trabajo2.Aplicacion\obj\Debug\net6.0\ref\Trabajo2.Aplicacion.dll
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\bin\Debug\net6.0\Trabajo2.Aplicacion.deps.json
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\bin\Debug\net6.0\Trabajo2.Aplicacion.dll
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\bin\Debug\net6.0\Trabajo2.Aplicacion.pdb
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\obj\Debug\net6.0\Trabajo2.Aplicacion.csproj.AssemblyReference.cache
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\obj\Debug\net6.0\Trabajo2.Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\obj\Debug\net6.0\Trabajo2.Aplicacion.AssemblyInfoInputs.cache
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\obj\Debug\net6.0\Trabajo2.Aplicacion.AssemblyInfo.cs
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\obj\Debug\net6.0\Trabajo2.Aplicacion.csproj.CoreCompileInputs.cache
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\obj\Debug\net6.0\Trabajo2.Aplicacion.dll
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\obj\Debug\net6.0\refint\Trabajo2.Aplicacion.dll
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\obj\Debug\net6.0\Trabajo2.Aplicacion.pdb
+C:\Users\caast\OneDrive\Documentos\GitHub\PROYECTO-.NET-CRUD\Trabajo2.Aplicacion\obj\Debug\net6.0\ref\Trabajo2.Aplicacion.dll

@@ -4,15 +4,15 @@
 
 // public class ListarEstudiantesSinFinalizarUseCase
 // {
-//     private readonly IRepositorioEstudiante _rEstudiante;
+//     private readonly IRepositorioCursoEstudiante _rCursoEstudiante;
 
-//     public ListarEstudiantesSinFinalizarUseCase(IRepositorioEstudiante rEstudiante)
+//     public ListarEstudiantesSinFinalizarUseCase(IRepositorioCursoEstudiante rCursoEstudiante)
 //     {
-//         _rEstudiante = rEstudiante;
+//         _rCursoEstudiante = rCursoEstudiante;
 //     }
 
-//     public List<Estudiante> Ejecutar()
+//     public List<CursoEstudiante> Ejecutar()
 //     {
-//         return _rEstudiante.GetEstudiantesNoFinalizo();
+//         return _rCursoEstudiante.GetEstudiantesNoFinalizo();
 //     }
 // }

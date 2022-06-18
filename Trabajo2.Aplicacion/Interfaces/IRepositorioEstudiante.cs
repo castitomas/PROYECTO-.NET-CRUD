@@ -6,9 +6,7 @@ public interface IRepositorioEstudiante
     void ModificarEstudiante(Estudiante estudiante);
     void EliminarEstudiante(int id);
     void AgregarEstudiante(Estudiante estudiante);
-    Estudiante? GetEstudiante(int DNI);
+    Estudiante? GetEstudiante(int id);
     List<Estudiante> GetEstudiantes();
-    // List<Estudiante> GetEstudiantesFinalizo();
-    // List<Estudiante> GetEstudiantesNoFinalizo();
-    // List<Curso> GetCursosEstudiante(int DNI);
+    List<Curso> GetCursosDeEstudiante(int id);
 }

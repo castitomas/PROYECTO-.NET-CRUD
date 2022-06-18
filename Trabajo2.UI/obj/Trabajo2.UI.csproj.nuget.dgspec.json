@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.UI\\Trabajo2.UI.csproj": {}
+    "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.UI\\Trabajo2.UI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
+    "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
         "projectName": "Trabajo2.Aplicacion",
-        "projectPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
+        "projectPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
         "packagesPath": "C:\\Users\\caast\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\obj\\",
+        "outputPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\caast\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -52,18 +52,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj": {
+    "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
+        "projectUniqueName": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
         "projectName": "Trabajo2.Repositorios",
-        "projectPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
+        "projectPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
         "packagesPath": "C:\\Users\\caast\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\obj\\",
+        "outputPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Repositorios\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\caast\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -78,8 +78,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
-                "projectPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj"
+              "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj"
               }
             }
           }
@@ -118,18 +118,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.UI\\Trabajo2.UI.csproj": {
+    "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.UI\\Trabajo2.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.UI\\Trabajo2.UI.csproj",
+        "projectUniqueName": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.UI\\Trabajo2.UI.csproj",
         "projectName": "Trabajo2.UI",
-        "projectPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.UI\\Trabajo2.UI.csproj",
+        "projectPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.UI\\Trabajo2.UI.csproj",
         "packagesPath": "C:\\Users\\caast\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.UI\\obj\\",
+        "outputPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\caast\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -144,11 +144,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
-                "projectPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj"
+              "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj"
               },
-              "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj": {
-                "projectPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj"
+              "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj": {
+                "projectPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj"
               }
             }
           }
@@ -186,7 +186,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }

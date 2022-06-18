@@ -1098,11 +1098,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
+      "projectUniqueName": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
       "projectName": "Trabajo2.Repositorios",
-      "projectPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
+      "projectPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Repositorios\\Trabajo2.Repositorios.csproj",
       "packagesPath": "C:\\Users\\caast\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Repositorios\\obj\\",
+      "outputPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Repositorios\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\caast\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1117,8 +1117,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
-              "projectPath": "c:\\Users\\caast\\proyectosDotNet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj"
+            "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj": {
+              "projectPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj"
             }
           }
         }
@@ -1157,7 +1157,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

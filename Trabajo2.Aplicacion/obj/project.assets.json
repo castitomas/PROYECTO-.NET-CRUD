@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
+      "projectUniqueName": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
       "projectName": "Trabajo2.Aplicacion",
-      "projectPath": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
+      "projectPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\Trabajo2.Aplicacion.csproj",
       "packagesPath": "C:\\Users\\caast\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\caast\\proyectosDotnet\\Trabajo2\\Trabajo2\\Trabajo2.Aplicacion\\obj\\",
+      "outputPath": "C:\\Users\\caast\\OneDrive\\Documentos\\GitHub\\PROYECTO-.NET-CRUD\\Trabajo2.Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\caast\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
       }
     }
   }

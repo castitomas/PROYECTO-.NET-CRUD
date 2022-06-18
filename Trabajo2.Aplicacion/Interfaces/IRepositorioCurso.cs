@@ -8,5 +8,5 @@ public interface IRepositorioCurso
     void EliminarCurso(int id);
     Curso? GetCurso(int id);
     List<Curso> GetCursos();
-    // List<Estudiante> GetEstudiantesCurso(string titulo);
+    List<Estudiante> GetEstudiantesDeCurso(int id);
 }

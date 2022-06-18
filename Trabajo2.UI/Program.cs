@@ -30,6 +30,8 @@ builder.Services.AddTransient<ObtenerInscripcionUseCase>();
 builder.Services.AddTransient<ListarEstudiantesUseCase>();
 builder.Services.AddTransient<ListarCursosUseCase>();
 builder.Services.AddTransient<ListarInscripcionesUseCase>();
+builder.Services.AddTransient<ListarCursosDeEstudianteUseCase>();
+builder.Services.AddTransient<ListarEstudiantesDeCursoUseCase>();
 builder.Services.AddScoped<IRepositorioEstudiante, RepositorioEstudiante>();
 builder.Services.AddScoped<IRepositorioCurso, RepositorioCurso>();
 builder.Services.AddScoped<IRepositorioInscripcion, RepositorioInscripcion>();

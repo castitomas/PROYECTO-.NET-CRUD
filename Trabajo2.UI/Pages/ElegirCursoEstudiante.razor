@@ -1,0 +1,73 @@
+@page "/elegircursoestudiante"
+@inject ListarEstudiantesUseCase ListarEstudiantesUseCase
+@inject ListarCursosUseCase ListarCursosUseCase
+@inject ListarCursosDeEstudianteUseCase ListarCursosDeEstudianteUseCase
+@inject ListarEstudiantesDeCursoUseCase ListarEstudiantesDeCursoUseCase
+
+<h3> Elegir Estudiante </h3>
+
+<EditForm Model=@_estudiante>
+    <InputSelect @bind-Value=@_estudiante._estudianteId>
+        @foreach(var est in DevolverListaEstudiante())
+        {
+            <option value=@est._estudianteId>@est.Nombre</option>
+        }
+    </InputSelect>
+</EditForm>
+<button class="btn btn-primary" @onclick="MostrarCursos">Mostrar</button>
+
+<ul>
+@foreach (var cur in listaC)
+{
+    <li> @cur.Titulo </li>
+}
+</ul>
+
+<h3> Elegir Curso </h3>
+
+<EditForm Model=@_curso>
+    <InputSelect @bind-Value=@_curso._cursoId>
+        @foreach(var cur in DevolverListaCurso())
+        {
+            <option value=@cur._cursoId>@cur.Titulo</option>
+        }
+    </InputSelect>
+</EditForm>
+<button class="btn btn-primary" @onclick="MostrarEstudiantes">Mostrar</button>
+
+<ul>
+@foreach (var est in listaE)
+{
+    <li> @est.Nombre </li>
+}
+</ul>
+
+@code
+{
+    Estudiante _estudiante = new Estudiante();
+    Curso _curso = new Curso();
+    List<Curso> listaC = new List<Curso>();
+    List<Estudiante> listaE = new List<Estudiante>();
+    void MostrarCursos()
+    {
+        listaC = ListarCursosDeEstudianteUseCase.Ejecutar(_estudiante._estudianteId);
+    }
+
+    void MostrarEstudiantes()
+    {
+        listaE = ListarEstudiantesDeCursoUseCase.Ejecutar(_curso._cursoId);
+    }
+
+    List<Estudiante> DevolverListaEstudiante()
+    {
+        var listaEstudiantes = ListarEstudiantesUseCase.Ejecutar();
+        return listaEstudiantes;
+    }
+
+    List<Curso> DevolverListaCurso()
+    {
+        var listaCursos = ListarCursosUseCase.Ejecutar();
+        return listaCursos;
+    }
+
+}
