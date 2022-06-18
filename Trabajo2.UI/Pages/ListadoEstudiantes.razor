@@ -1,8 +1,12 @@
 @page "/listadoEstudiantes"
 @inject ListarEstudiantesUseCase ListarEstudiantesUseCase
+@inject ListarEstudiantesFinalizoUseCase ListarEstudiantesFinalizoUseCase
+@inject ListarEstudiantesSinFinalizarUseCase ListarEstudiantesSinFinalizarUseCase
 @inject IJSRuntime JsRuntime
 @inject EliminarEstudianteUseCase EliminarEstudianteUseCase
 @inject NavigationManager Navegador
+
+<h2> Listado Completo Estudiantes </h2>
 
 <table class = "table">
     <thead>
@@ -39,12 +43,60 @@
     </tbody>
 </table>
 
+<h3> Estudiantes que han finalizado algún curso. </h3>  
+
+<table class = "table">
+    <thead>
+        <tr>
+            <th> Nombre </th>
+            <th> Apellido </th>
+            <th> Título del Curso </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aux in _listaAuxiliarUno)
+        {
+            <tr>
+                <th> @aux.NombreEstudiante </th>
+                <th> @aux.ApellidoEstudiante </th>
+                <th> @aux.TituloCurso </th>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3> Estudiantes que estan realizando algún curso actualmente. </h3>  
+
+<table class = "table">
+    <thead>
+        <tr>
+            <th> Nombre </th>
+            <th> Apellido </th>
+            <th> Título del Curso </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var aux in _listaAuxiliarDos)
+        {
+            <tr>
+                <th> @aux.NombreEstudiante </th>
+                <th> @aux.ApellidoEstudiante </th>
+                <th> @aux.TituloCurso </th>
+            </tr>
+        }
+    </tbody>
+</table>
+
 @code 
 {
     List<Estudiante> _lista = new List<Estudiante>();
+    List<Auxiliar> _listaAuxiliarUno = new List<Auxiliar>();
+    List<Auxiliar> _listaAuxiliarDos = new List<Auxiliar>();
     protected override void OnInitialized()
     {
         _lista = ListarEstudiantesUseCase.Ejecutar();
+        _listaAuxiliarUno = ListarEstudiantesFinalizoUseCase.Ejecutar();
+        _listaAuxiliarDos = ListarEstudiantesSinFinalizarUseCase.Ejecutar();
     }
     async Task EliminarEstudiante(int id)
     {

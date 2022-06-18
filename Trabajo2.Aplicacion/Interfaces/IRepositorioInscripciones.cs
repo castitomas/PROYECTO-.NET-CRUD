@@ -8,4 +8,6 @@ public interface IRepositorioInscripcion
     void AgregarInscripcion(Inscripcion inscripcion);
     Inscripcion? GetInscripcion(int id);
     List<Inscripcion> GetInscripciones();
+    List<Auxiliar> GetEstudiantesFinalizo();
+    List<Auxiliar> GetEstudiantesNoFinalizo();
 }

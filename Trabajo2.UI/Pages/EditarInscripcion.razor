@@ -17,7 +17,7 @@ else
 }
 
 
-<EditForm Model=@_estudiante>
+<EditForm Model=@_estudiante class="select">
     <InputSelect @bind-Value=@_estudiante._estudianteId>
         @foreach(var est in DevolverListaEstudiante())
         {
@@ -25,7 +25,7 @@ else
         }
     </InputSelect>
 </EditForm>
-<EditForm Model=@_curso>
+<EditForm Model=@_curso class="select">
     <InputSelect @bind-Value=@_curso._cursoId>
         @foreach(var cur in DevolverListaCurso())
         {

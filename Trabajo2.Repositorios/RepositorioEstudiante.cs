@@ -77,7 +77,7 @@ public class RepositorioEstudiante: IRepositorioEstudiante
             var Curso = new Curso();
             var query = db.Estudiantes.Join(db.Inscripciones,
                             a => a._estudianteId,
-                            e=> e.EstudianteId,
+                            e => e.EstudianteId,
                             (a, e) => new
                             {
                                 Id = a._estudianteId,

@@ -1,18 +1,18 @@
-// using Trabajo2.Aplicacion.Entidades;
-// using Trabajo2.Aplicacion.Interfaces;
-// namespace Trabajo2.Aplicacion.UseCases;
+using Trabajo2.Aplicacion.Entidades;
+using Trabajo2.Aplicacion.Interfaces;
+namespace Trabajo2.Aplicacion.UseCases;
 
-// public class ListarEstudiantesFinalizoUseCase
-// {
-//     private readonly IRepositorioCursoEstudiante _rCursoEstudiante;
+public class ListarEstudiantesFinalizoUseCase
+{
+    private readonly IRepositorioInscripcion _rInscripcion;
 
-//     public ListarEstudiantesFinalizoUseCase(IRepositorioCursoEstudiante rCursoEstudiante)
-//     {
-//         _rCursoEstudiante = rCursoEstudiante;
-//     }
+    public ListarEstudiantesFinalizoUseCase(IRepositorioInscripcion rInscripcion)
+    {
+        _rInscripcion = rInscripcion;
+    }
 
-//     public List<CursoEstudiante> Ejecutar()
-//     {
-//         return _rCursoEstudiante.GetEstudiantesFinalizo();
-//     }
-// }
+    public List<Auxiliar> Ejecutar()
+    {
+        return _rInscripcion.GetEstudiantesFinalizo();
+    }
+}

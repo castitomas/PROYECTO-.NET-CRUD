@@ -65,4 +65,70 @@ public class RepositorioInscripcion : IRepositorioInscripcion
         }
         return listaInscripciones;
     }
+
+    public List<Auxiliar> GetEstudiantesFinalizo()
+    {
+        using(var db = new Trabajo2Context())
+        {
+            var listaAuxiliar = new List<Auxiliar>();
+            var Curso = new Curso();
+            DateTime now = DateTime.Now;
+            var query = db.Estudiantes.Join(db.Inscripciones,
+                            a => a._estudianteId,
+                            e => e.EstudianteId,
+                            (a, e) => new
+                            {
+                                Id = a._estudianteId,
+                                Nombre = a.Nombre,
+                                Apellido = a.Apellido,
+                                Curso = e.CursoId,
+                            });
+            foreach(var obj in query)
+            {
+                Curso = db.Cursos.Where(o => o._cursoId == obj.Curso).SingleOrDefault();
+                if (Curso != null)
+                {
+                    var auxiliarTemp = new Auxiliar() { NombreEstudiante = obj.Nombre, ApellidoEstudiante = obj.Apellido, TituloCurso = Curso.Titulo};
+                    if (Curso.FechaDeFinalizacion < now)
+                    {
+                        listaAuxiliar.Add(auxiliarTemp);
+                    }
+                }
+            }
+            return listaAuxiliar;
+        }
+    }
+
+    public List<Auxiliar> GetEstudiantesNoFinalizo()
+    {
+        using(var db = new Trabajo2Context())
+        {
+            var listaAuxiliar = new List<Auxiliar>();
+            var Curso = new Curso();
+            DateTime now = DateTime.Now;
+            var query = db.Estudiantes.Join(db.Inscripciones,
+                            a => a._estudianteId,
+                            e => e.EstudianteId,
+                            (a, e) => new
+                            {
+                                Id = a._estudianteId,
+                                Nombre = a.Nombre,
+                                Apellido = a.Apellido,
+                                Curso = e.CursoId,
+                            });
+            foreach(var obj in query)
+            {
+                Curso = db.Cursos.Where(o => o._cursoId == obj.Curso).SingleOrDefault();
+                if (Curso != null)
+                {
+                    var auxiliarTemp = new Auxiliar() { NombreEstudiante = obj.Nombre, ApellidoEstudiante = obj.Apellido, TituloCurso = Curso.Titulo};
+                    if (Curso.FechaDeFinalizacion > now)
+                    {
+                        listaAuxiliar.Add(auxiliarTemp);
+                    }
+                }
+            }
+            return listaAuxiliar;
+        }
+    }
 }
